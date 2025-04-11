@@ -1,0 +1,182 @@
+@import url("../css2");
+
+:root {
+  --page-background-color: rgb(247, 247, 247);
+  /* Էջի ֆոնի գույնը՝ բաց մոխրագույն */
+  --content-background-color: rgba(255, 255, 255, 0);
+  /* Բովանդակության թափանցիկ ֆոն՝ սպիտակ */
+  --text-color: rgb(37, 37, 37);
+  /* Տեքստի հիմնական գույնը՝ մուգ մոխրագույն */
+  --primary-color: rgb(33, 173, 234);
+  /* Հիմնական գույնը՝ կապույտ */
+  --secondary-color: rgb(152, 219, 248);
+  /* Երկրորդական գույն՝ բաց կապույտ */
+
+  /* Պարբերության (p) տեքստի ոճ */
+
+  --p-font-family: PT Sans, sans-serif;
+  /* Տառատեսակ՝ PT Sans կամ այլ sans-serif */
+  --p-font-size: 16px;
+  /* Պարբերության տեքստի չափը՝ 16px */
+  --p-font-weight: normal;
+  /* Պարբերության տեքստի հաստությունը՝ սովորական */
+  --p-line-height: 140%;
+  /* Տողերի բարձրություն՝ 140% */
+  --p-letter-spacing: 0.08px;
+  /* Տառերի միջև տարածություն՝ 0.08px */
+  --p-font-style: normal;
+  /* Տառի ոճ՝ սովորական */
+  --p-text-transform: none;
+  /* Տեքստի տրանսֆորմացիա՝ ոչինչ չի փոխվում (օր. uppercase) */
+
+  /* H1 վերնագրի ոճ */
+
+  --h1-font-family: PT Sans, sans-serif;
+  /* Հ1 վերնագրի տառատեսակ */
+  --h1-font-size: 36px;
+  /* Հ1 վերնագրի չափ՝ 36px */
+  --h1-font-weight: bold;
+  /* Հ1 վերնագրի հաստություն՝ հաստ */
+  --h1-line-height: 120%;
+  /* Հ1 վերնագրի տողերի բարձրություն*/
+  --h1-letter-spacing: 0.08px;
+  /* H1 վերնագրի տառերի միջև տարածությունը՝ 0.08px */
+  --h1-font-style: normal;
+  /* H1 վերնագրի տառի ոճը՝ սովորական */
+  --h1-text-transform: none;
+  /* H1 վերնագրի տրանսֆորմացիան՝ ոչինչ չի փոխվում (օր. uppercase) */
+
+  /* H2 վերնագրի ոճ */
+
+  --h2-font-family: PT Sans, sans-serif;
+  /* H2 վերնագրի տառատեսակ */
+  --h2-font-size: 28px;
+  /* H2 վերնագրի չափ՝ 28px */
+  --h2-font-weight: bold;
+  /* H2 վերնագրի հաստությունը՝ հաստ */
+  --h2-line-height: 120%;
+  /* H2 վերնագրի տողերի բարձրությունը՝ 120% */
+  --h2-letter-spacing: 0.08px;
+  /* H2 վերնագրի տառերի միջև տարածությունը՝ 0.08px */
+  --h2-font-style: normal;
+  /* H2 վերնագրի տառի ոճը՝ սովորական */
+  --h2-text-transform: none;
+  /* H2 վերնագրի տրանսֆորմացիան՝ ոչինչ չի փոխվում */
+
+  /* H3 վերնագրի ոճ */
+
+  --h3-font-family: PT Sans, sans-serif;
+  /* H3 վերնագրի տառատեսակ */
+  --h3-font-size: 22px;
+  /* H3 վերնագրի չափ՝ 22px */
+  --h3-font-weight: bold;
+  /* H3 վերնագրի հաստությունը՝ հաստ */
+  --h3-line-height: 120%;
+  /* H3 վերնագրի տողերի բարձրությունը՝ 120% */
+  --h3-letter-spacing: 0.08px;
+  /* H3 վերնագրի տառերի միջև տարածությունը՝ 0.08px */
+  --h3-font-style: normal;
+  /* H3 վերնագրի տառի ոճը՝ սովորական */
+  --h3-text-transform: none;
+  /* H3 վերնագրի տրանսֆորմացիան՝ ոչինչ չի փոխվում (օր. uppercase) */
+
+  /* H4 վերնագրի ոճ */
+
+  --h4-font-family: PT Sans, sans-serif;
+  /* H4 վերնագրի տառատեսակ */
+  --h4-font-size: 18px;
+  /* H4 վերնագրի չափ՝ 18px */
+  --h4-font-weight: bold;
+  /* H4 վերնագրի հաստությունը՝ հաստ */
+  --h4-line-height: 120%;
+  /* H4 վերնագրի տողերի բարձրությունը՝ 120% */
+  --h4-letter-spacing: 0.08px;
+  /* H4 վերնագրի տառերի միջև տարածությունը՝ 0.08px */
+  --h4-font-style: normal;
+  /* H4 վերնագրի տառի ոճը՝ սովորական */
+  --h4-text-transform: none; /* H4 վերնագրի տրանսֆորմացիան՝ ոչինչ չի փոխվում */
+
+  /* Կոճակների (Button) ոճ */
+
+  --button-font-family: PT Sans, sans-serif;
+  /* Կոճակի տառատեսակ */
+  --button-font-size: 16px;
+  /* Կոճակի տառի չափ՝ 16px */
+  --button-font-weight: bold;
+  /* Կոճակի տառի հաստությունը՝ հաստ */
+  --button-line-height: 120%;
+  /* Կոճակի տողերի բարձրությունը՝ 120% */
+  --button-letter-spacing: 0.08px;
+  /* Կոճակի տառերի միջև տարածությունը՝ 0.08px */
+  --button-font-style: normal;
+  /* Կոճակի տառի ոճը՝ սովորական */
+  --button-text-transform: none;
+  /* Կոճակի տրանսֆորմացիան՝ ոչինչ չի փոխվում */
+
+  /* Preformatted text ոճ (Pre) */
+
+  --pre-font-family: PT Sans, sans-serif;
+  /* Pre տառատեսակ */
+  --pre-font-weight: bold;
+  /* Pre տառի հաստությունը՝ հաստ */
+  --pre-letter-spacing: 0.08px;
+  /* Pre տառերի միջև տարածությունը՝ 0.08px */
+  --pre-font-style: normal;
+  /* Pre տառի ոճը՝ սովորական */
+  --pre-text-transform: none;
+  /* Pre տրանսֆորմացիան՝ ոչինչ չի փոխվում */
+
+  --primary-button-border-radius: 0;
+  /* Գործողության կոճակի սահմանը ոչ մի շրջանակ չունի (կոնկրետ շրջանակ չկա) */
+  --primary-button-border-style: solid;
+  /* Կոճակի սահմանը կլինի շարունակական գիծ */
+  --primary-button-border-width: 2px;
+  /* Կոճակի սահմանը կունենա 2 պիկսել հաստություն */
+  --primary-button-border-color: rgba(255, 255, 255, 0);
+  /* Կոճակի սահմանը կլինի թափանցիկ */
+  --primary-button-color: rgb(255, 255, 255);
+  /* Կոճակի տառերի գույնը կլինի սպիտակ */
+  --primary-button-background: rgb(33, 173, 234);
+  /* Կոճակի ֆոնային գույնը կլինի կապույտ*/
+  --primary-button-font-size: 16px;
+  /* Կոճակի տառերի չափը կլինի 16 պիկսել */
+  --primary-button-font-weight: bold;
+  /* Կոճակի տառերը կլինեն հաստ (bold) */
+  --primary-button-font-style: normal;
+  /* Կոճակի տառերը չեն ունենա իտալիկ կամ գրաֆիկական ոճ */
+  --primary-button-font-family: PT Sans, sans-serif;
+  /* Կոճակի տառատեսակը կլինի PT Sans, եթե այդ ֆոնտը չկա՝ օգտագործվելու է sans-serif */
+  --primary-button-line-height: 120%;
+  /* Կոճակի տեքստի բարձրությունը կլինի 120% */
+  --primary-button-text-transform: none;
+  /* Կոճակի տեքստը չի փոխվի վերև կամ ներքև գրված (առանց մեծատառերի կամ փոքրատառերի) */
+  --primary-button-letter-spacing: 0.08px;
+  /* Կոճակի տառերի միջև լինի փոքր բացահայտում՝ 0.08 պիկսել */
+
+  --secondary-button-border-radius: 0;
+  /* Երկրորդային կոճակի սահմանը չունի կոնաձև անկյուններ (կանոնավոր ուղղանկյուն տեսք) */
+  --secondary-button-border-style: solid;
+  /* Երկրորդային կոճակի սահմանը կլինի շարունակական գիծ */
+  --secondary-button-border-width: 2px;
+  /* Երկրորդային կոճակի սահմանը կունենա 2 պիկսել հաստություն */
+  --secondary-button-border-color: rgb(33, 173, 234);
+  /* Երկրորդային կոճակի սահմանը կլինի կապույտ (rgb(33, 173, 234)) */
+  --secondary-button-color: rgb(33, 173, 234);
+  /* Երկրորդային կոճակի տառերի գույնը կլինի կապույտ */
+  --secondary-button-background: rgba(255, 255, 255, 0);
+  /* Երկրորդային կոճակի ֆոնային գույնը կլինի թափանցիկ սպիտակ (rgba(255, 255, 255, 0)) */
+  --secondary-button-font-size: 16px;
+  /* Երկրորդային կոճակի տառերի չափը կլինի 16 պիկսել */
+  --secondary-button-font-weight: bold;
+  /* Երկրորդային կոճակի տառերը կլինեն հաստ (bold) */
+  --secondary-button-font-style: normal;
+  /* Երկրորդային կոճակի տառերը չեն ունենա իտալիկ կամ գրաֆիկական ոճ */
+  --secondary-button-font-family: PT Sans, sans-serif;
+  /* Երկրորդային կոճակի տառատեսակը կլինի PT Sans, եթե այդ ֆոնտը չկա՝ օգտագործվելու է sans-serif */
+  --secondary-button-line-height: 120%;
+  /* Երկրորդային կոճակի տեքստի բարձրությունը կլինի 120% */
+  --secondary-button-text-transform: none;
+  /* Երկրորդային կոճակի տեքստը չի փոխվի վերև կամ ներքև գրված (առանց մեծատառերի կամ փոքրատառերի) */
+  --secondary-button-letter-spacing: 0.08px;
+  /* Երկրորդային կոճակի տառերի միջև կլինի փոքր բացահայտում՝ 0.08 պիկսել */
+}
